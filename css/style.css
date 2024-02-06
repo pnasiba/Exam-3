@@ -321,7 +321,7 @@ template {
   src: url(../assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
 }
 .container {
-  max-width: 1280px;
+  max-width: 1216px;
   margin: 0 auto;
   width: 100%;
   padding: 0 10px;
@@ -355,7 +355,7 @@ header .nav__list--item:nth-child(5) {
   color: rgb(243, 244, 246);
 }
 header .nav__list--item:nth-child(6) {
-  margin-left: 7px;
+  margin-left: 10px;
 }
 header .nav__list--item-link {
   text-decoration: none;
@@ -382,8 +382,10 @@ header .nav__list--item .down-btn {
 main {
   width: 100%;
 }
+main .intro {
+  padding: 96px 0;
+}
 main .intro__wrapper {
-  padding: 96px 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -473,9 +475,9 @@ main .about .info {
   margin: 0 auto 48px auto;
 }
 main .about__wrapper {
-  margin: 0 32px;
   display: flex;
   align-items: start;
+  justify-content: space-between;
   gap: 190px;
 }
 main .about__wrapper-image {
@@ -488,7 +490,6 @@ main .about__wrapper-image:hover {
 }
 main .about__wrapper-image img {
   width: 400px;
-  height: 480px;
   border-radius: 8px;
   margin-left: 5px;
 }
@@ -556,9 +557,6 @@ main .skills .desc {
   border-radius: 12px;
   margin: 0 auto 48px auto;
 }
-main .skills__wrapper {
-  margin: 0 32px;
-}
 main .skills__wrapper--icons {
   display: flex;
   margin-bottom: 48px;
@@ -581,6 +579,79 @@ main .skills__wrapper--icons2 img {
 main .skills__wrapper--icons2 img:hover {
   filter: none;
   transition: all 0.1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+main .experience {
+  background-color: rgb(249, 250, 251);
+  padding: 96px 0;
+}
+main .experience .info {
+  color: rgb(75, 85, 99);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  padding: 4px 20px 4px 20px;
+  border-radius: 12px;
+  background: rgb(229, 231, 235);
+  width: 105px;
+  margin: 0 auto 16px auto;
+}
+main .experience .desc {
+  color: rgb(75, 85, 99);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: center;
+  border-radius: 12px;
+  margin: 0 auto 48px auto;
+}
+main .experience__wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 48px;
+}
+main .experience__wrapper--cards {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  width: 892px;
+}
+main .experience__wrapper--cards-desc {
+  align-items: start;
+  border-radius: 12px;
+  padding: 32px;
+  display: flex;
+  justify-content: space-between !important;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06), 0px 4px 3px 0px rgba(0, 0, 0, 0.07);
+  background-color: #fff;
+}
+main .experience__wrapper--cards-desc .all-title {
+  margin: 0 48px 0 90px;
+}
+main .experience__wrapper--cards-desc .all-title h3 {
+  color: rgb(17, 24, 39);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0%;
+  margin-bottom: 16px;
+}
+main .experience__wrapper--cards-desc .all-title ul {
+  width: 360px;
+  margin-left: 25px;
+}
+main .experience__wrapper--cards-desc .all-title ul li {
+  color: rgb(75, 85, 99);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+main .experience__wrapper--cards .itranstion {
+  width: 140px;
+  margin-left: -20px;
 }
 
 footer {
