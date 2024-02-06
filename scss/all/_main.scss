@@ -1,0 +1,100 @@
+main {
+    width: 100%;
+
+    .intro {
+        &__wrapper {
+            padding: 96px 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            // gap: 48px;
+
+            &--title {
+                h1 {
+                    color: $main-color;
+                    font-size: 60px;
+                    font-weight: 700;
+                    line-height: 72px;
+                    letter-spacing: -2%;
+                    margin-bottom: 8px;
+                }
+
+                .info {
+                    color: $second-color;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    letter-spacing: 0%;
+                    width: 768px;
+                    margin-bottom: 48px;
+                }
+
+                &-location {
+                    display: flex;
+                    gap: 12px;
+                    align-items: center;
+                    margin-bottom: 8px;
+                }
+
+                &-desc {
+                    display: flex;
+                    gap: 19px;
+                    align-items: center;
+                    margin-left: 9px;
+                    margin-bottom: 48px;
+
+                    div {
+                        width: 9px;
+                        height: 9px;
+                        border-radius: 20px;
+                        background: rgb(16, 185, 129);
+                    }
+
+                }
+
+                .loc-info {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    letter-spacing: 0%;
+                    color: $second-color;
+                }
+
+                &-network {
+                    display: flex;
+                    gap: 4px;
+                }
+
+            }
+
+
+            &-img {
+                margin-right: 32px;
+                // border: 1px solid silver;
+
+                img {
+                    border-radius: 8px;
+                    width: 280px;
+                    height: 320px;
+                    margin-right: 5px;
+
+                    &:hover {
+                        margin-top: 25px;
+                        margin-right: -8px;
+                        transition: all 3s cubic-bezier(0.165, 0.84, 0.44, 1);
+                    }
+                }
+
+                box-shadow: 20px 20px 2px 1px rgb(229, 231, 235);
+                border-radius: 8px;
+
+                &:hover {
+                    box-shadow: none;
+                    transition: all 3s cubic-bezier(0.165, 0.84, 0.44, 1);
+                }
+            }
+        }
+    }
+
+   
+}

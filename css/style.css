@@ -379,6 +379,83 @@ header .nav__list--item .down-btn {
   line-height: 24px;
 }
 
+main {
+  width: 100%;
+}
+main .intro__wrapper {
+  padding: 96px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .intro__wrapper--title h1 {
+  color: rgb(17, 24, 39);
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 72px;
+  letter-spacing: -2%;
+  margin-bottom: 8px;
+}
+main .intro__wrapper--title .info {
+  color: rgb(75, 85, 99);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  width: 768px;
+  margin-bottom: 48px;
+}
+main .intro__wrapper--title-location {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+main .intro__wrapper--title-desc {
+  display: flex;
+  gap: 19px;
+  align-items: center;
+  margin-left: 9px;
+  margin-bottom: 48px;
+}
+main .intro__wrapper--title-desc div {
+  width: 9px;
+  height: 9px;
+  border-radius: 20px;
+  background: rgb(16, 185, 129);
+}
+main .intro__wrapper--title .loc-info {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: rgb(75, 85, 99);
+}
+main .intro__wrapper--title-network {
+  display: flex;
+  gap: 4px;
+}
+main .intro__wrapper-img {
+  margin-right: 32px;
+  box-shadow: 20px 20px 2px 1px rgb(229, 231, 235);
+  border-radius: 8px;
+}
+main .intro__wrapper-img img {
+  border-radius: 8px;
+  width: 280px;
+  height: 320px;
+  margin-right: 5px;
+}
+main .intro__wrapper-img img:hover {
+  margin-top: 25px;
+  margin-right: -8px;
+  transition: all 3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+main .intro__wrapper-img:hover {
+  box-shadow: none;
+  transition: all 3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
 footer {
   width: 100%;
 }
