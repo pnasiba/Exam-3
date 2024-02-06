@@ -190,5 +190,70 @@ main {
         }
     }
 
-   
+    .skills {
+        padding: 96px 0;
+
+        .infos {
+            color: $second-color;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 0%;
+            text-align: center;
+            padding: 4px 20px 4px 20px;
+            border-radius: 12px;
+            background: rgb(229, 231, 235);
+            width: 105px;
+            margin: 0 auto 16px auto;
+        }
+
+        .desc {
+            color: $second-color;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 28px;
+            letter-spacing: 0%;
+            text-align: center;
+            border-radius: 12px;
+            margin: 0 auto 48px auto;
+        }
+
+        &__wrapper {
+            margin: 0 32px;
+
+            &--icons {
+                display: flex;
+                margin-bottom: 48px;
+                justify-content: space-between;
+
+                img {
+                    filter: grayscale(100%);
+
+                    &:hover {
+                        filter: none;
+                        transition: all .1s cubic-bezier(0.075, 0.82, 0.165, 1);
+                    }
+                }
+
+            }
+
+
+
+            &--icons2 {
+                display: flex;
+                justify-content: space-between;
+
+                img {
+                    filter: grayscale(100%);
+
+                    &:hover {
+                        filter: none;
+                        transition: all .1s cubic-bezier(0.075, 0.82, 0.165, 1);
+                    }
+                }
+            }
+        }
+
+
+    }
 }
