@@ -72,7 +72,8 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -307,8 +308,20 @@ template {
   display: none;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Inter";
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(../assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
 .container {
-  max-width: 1240px;
+  max-width: 1280px;
   margin: 0 auto;
   width: 100%;
   padding: 0 10px;
@@ -319,33 +332,53 @@ header {
 }
 header .nav {
   display: flex;
-  height: 70px;
+  height: 68px;
   align-items: center;
   justify-content: space-between;
 }
 header .nav__logo {
-  font-style: 24px;
-  cursor: pointer;
+  color: rgb(17, 24, 39);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -2%;
+  text-align: center;
+  text-decoration: none;
 }
 header .nav__list {
   display: flex;
-  gap: 50px;
+  gap: 24px;
   list-style-type: none;
+  align-items: center;
 }
-header .nav__list--item {
-  text-transform: uppercase;
+header .nav__list--item:nth-child(5) {
+  color: rgb(243, 244, 246);
+}
+header .nav__list--item:nth-child(6) {
+  margin-left: 7px;
 }
 header .nav__list--item-link {
   text-decoration: none;
+  color: rgb(75, 85, 99);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
 }
-header .nav__list--item-link:hover {
-  color: red;
+header .nav__list--item:hover {
+  text-decoration: underline;
 }
-
-main {
-  width: 100%;
+header .nav__list--item .down-btn {
+  padding: 6px 16px;
+  border-radius: 12px;
+  background: rgb(17, 24, 39);
+  border: none;
+  text-decoration: none;
+  color: rgb(249, 250, 251);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
 }
 
 footer {
   width: 100%;
-}/*# sourceMappingURL=style.css.map */
+}

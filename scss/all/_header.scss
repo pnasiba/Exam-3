@@ -1,34 +1,68 @@
 header {
     width: 100%;
 
-    // example
 
     .nav {
         display: flex;
-        height: 70px;
+        height: 68px;
         align-items: center;
         justify-content: space-between;
 
         &__logo {
-            font-style: 24px;
-            cursor: pointer;
+            color: $main-color;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 36px;
+            letter-spacing: -2%;
+            text-align: center;
+            text-decoration: none;
         }
 
         &__list {
             display: flex;
-            gap: 50px;
+            gap: 24px;
             list-style-type: none;
+            align-items: center;
 
             &--item {
-                text-transform: uppercase;
+
+                &:nth-child(5) {
+                    color: rgb(243, 244, 246);
+                }
+
+                &:nth-child(6) {
+                    margin-left: 7px;
+                }
 
                 &-link {
                     text-decoration: none;
-                    &:hover{
-                        color:red;
-                    }
+                    color: $second-color;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 24px;
                 }
+
+                &:hover {
+                    text-decoration: underline;
+                }
+
+                .down-btn {
+                    padding: 6px 16px;
+                    border-radius: 12px;
+                    background: $main-color;
+                    border: none;
+                    text-decoration: none;
+                    color: rgb(249, 250, 251);
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 24px;
+                }
+
+
+
             }
         }
+
     }
+
 }
