@@ -247,7 +247,7 @@ main {
                     &:hover {
                         filter: none;
                         transition: all 3s cubic-bezier(0.165, 0.84, 0.44, 1);
-                        scale: 2;
+                        scale: 1.2;
                     }
                 }
 
@@ -265,7 +265,7 @@ main {
                     &:hover {
                         filter: none;
                         transition: all 3s cubic-bezier(0.165, 0.84, 0.44, 1);
-                        scale: 2;
+                        scale: 1.2;
                     }
                 }
             }
@@ -323,6 +323,7 @@ main {
                     background-color: #fff;
 
                     &:hover {
+                        scale: 1.02;
                         box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06), 0px 4px 3px 0px rgba(0, 0, 0, 0.07);
                         transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
                     }
@@ -401,6 +402,7 @@ main {
                 background: rgb(255, 255, 255);
 
                 &:hover {
+                    scale: 1.02;
                     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06), 0px 4px 3px 0px rgba(0, 0, 0, 0.07);
                     transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
                 }
@@ -507,6 +509,7 @@ main {
                     margin-bottom: 5px;
 
                     &:hover {
+                        scale: 1.01;
                         box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06), 0px 4px 3px 0px rgba(0, 0, 0, 0.07);
                         transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
                     }
