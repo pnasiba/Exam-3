@@ -653,6 +653,92 @@ main .experience__wrapper--cards .itranstion {
   width: 140px;
   margin-left: -20px;
 }
+main .work {
+  padding: 96px 0;
+}
+main .work .info {
+  color: rgb(75, 85, 99);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  padding: 4px 20px 4px 20px;
+  border-radius: 12px;
+  background: rgb(229, 231, 235);
+  width: 105px;
+  margin: 0 auto 16px auto;
+}
+main .work .desc {
+  color: rgb(75, 85, 99);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: center;
+  border-radius: 12px;
+  margin: 0 auto 48px auto;
+}
+main .work__wrapper--box {
+  display: flex;
+  border-radius: 12px;
+  margin-bottom: 48px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06), 0px 4px 3px 0px rgba(0, 0, 0, 0.07);
+  background: rgb(255, 255, 255);
+}
+main .work__wrapper--box #bg-work2 {
+  border-radius: 12px 12px 0px 0px;
+  border-top-left-radius: 0;
+}
+main .work__wrapper--box-card {
+  width: 598px;
+  border-radius: 12px 0px 0px 12px;
+  padding: 48px;
+  background: rgb(249, 250, 251);
+}
+main .work__wrapper--box-card img {
+  border-radius: 12px;
+  width: 500px;
+  height: 384px;
+}
+main .work__wrapper--box-card_title {
+  padding: 48px;
+  width: 598px;
+}
+main .work__wrapper--box-card_title h4 {
+  color: rgb(17, 24, 39);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0%;
+  margin-bottom: 24px;
+}
+main .work__wrapper--box-card_title-desc {
+  width: 480px;
+  color: rgb(75, 85, 99);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  margin-bottom: 24px;
+}
+main .work__wrapper--box-card_title .lang {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+  width: 480px;
+}
+main .work__wrapper--box-card_title .lang-in {
+  color: rgb(75, 85, 99);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0%;
+  padding: 4px 20px 4px 20px;
+  border-radius: 12px;
+  background: rgb(229, 231, 235);
+}
 
 footer {
   width: 100%;
