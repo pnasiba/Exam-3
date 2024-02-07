@@ -2,6 +2,7 @@ main {
     width: 100%;
 
     .intro {
+        background-color: #fff;
         padding: 96px 0;
 
         &__wrapper {
@@ -193,6 +194,7 @@ main {
 
     .skills {
         padding: 96px 0;
+        background-color: #fff;
 
         .infos {
             color: $second-color;
@@ -344,6 +346,7 @@ main {
     }
 
     .work {
+        background-color: #fff;
         padding: 96px 0;
 
         .info {
@@ -381,10 +384,11 @@ main {
                 box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06), 0px 4px 3px 0px rgba(0, 0, 0, 0.07);
                 background: rgb(255, 255, 255);
 
-                #bg-work2{
+                #bg-work2 {
                     border-radius: 12px 12px 0px 0px;
                     border-top-left-radius: 0;
                 }
+
                 &-card {
                     width: 598px;
                     border-radius: 12px 0px 0px 12px;
@@ -438,6 +442,96 @@ main {
                                 background: rgb(229, 231, 235);
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+
+    .testimonial {
+        background-color: $bg-color;
+        padding: 96px 0;
+
+        .info {
+            color: $second-color;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 0%;
+            text-align: center;
+            padding: 4px 20px 4px 20px;
+            border-radius: 12px;
+            background: rgb(229, 231, 235);
+            width: 125px;
+            margin: 0 auto 16px auto;
+        }
+
+        .desc {
+            color: $second-color;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 28px;
+            letter-spacing: 0%;
+            text-align: center;
+            border-radius: 12px;
+            margin: 0 auto 48px auto;
+        }
+
+        .swiper {
+            &-wrapper {
+                .swiper-slide {
+                    padding: 48px;
+                    text-align: center;
+                    border-radius: 12px;
+                    margin-bottom: 3px;
+                    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06), 0px 4px 3px 0px rgba(0, 0, 0, 0.07);
+
+                    img {
+                        margin: 0 auto;
+                        width: 64px;
+                        margin-bottom: 24px;
+                    }
+
+                    &-title {
+                        text-align: left;
+                        margin-bottom: 24px;
+                        color: $second-color;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        letter-spacing: 0%;
+                        width: 277.33px;
+                        height: 120px;
+                    }
+                    #title{
+                        height: 168px;
+                    }
+
+                    .founder {
+                        margin-bottom: 4px;
+                        color: rgb(17, 24, 39);
+                        font-family: Inter;
+                        font-size: 20px;
+                        font-weight: 600;
+                        line-height: 28px;
+                        letter-spacing: 0%;
+                        text-align: center;
+                    }
+
+                    .office {
+                        margin-bottom: 48px;
+                        /* Body3/Normal - All */
+                        color: rgb(75, 85, 99);
+                        font-family: Inter;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 20px;
+                        letter-spacing: 0%;
+                        text-align: center;
+                    }
+
+                    #foun-off{
+                        margin-bottom: 0;
                     }
                 }
             }

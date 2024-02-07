@@ -329,6 +329,7 @@ template {
 
 header {
   width: 100%;
+  background-color: #fff;
 }
 header .nav {
   display: flex;
@@ -383,6 +384,7 @@ main {
   width: 100%;
 }
 main .intro {
+  background-color: #fff;
   padding: 96px 0;
 }
 main .intro__wrapper {
@@ -533,6 +535,7 @@ main .about__wrapper--title-info {
 }
 main .skills {
   padding: 96px 0;
+  background-color: #fff;
 }
 main .skills .infos {
   color: rgb(75, 85, 99);
@@ -654,6 +657,7 @@ main .experience__wrapper--cards .itranstion {
   margin-left: -20px;
 }
 main .work {
+  background-color: #fff;
   padding: 96px 0;
 }
 main .work .info {
@@ -738,6 +742,83 @@ main .work__wrapper--box-card_title .lang-in {
   padding: 4px 20px 4px 20px;
   border-radius: 12px;
   background: rgb(229, 231, 235);
+}
+main .testimonial {
+  background-color: rgb(249, 250, 251);
+  padding: 96px 0;
+}
+main .testimonial .info {
+  color: rgb(75, 85, 99);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  padding: 4px 20px 4px 20px;
+  border-radius: 12px;
+  background: rgb(229, 231, 235);
+  width: 125px;
+  margin: 0 auto 16px auto;
+}
+main .testimonial .desc {
+  color: rgb(75, 85, 99);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: center;
+  border-radius: 12px;
+  margin: 0 auto 48px auto;
+}
+main .testimonial .swiper-wrapper .swiper-slide {
+  padding: 48px;
+  text-align: center;
+  border-radius: 12px;
+  margin-bottom: 3px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06), 0px 4px 3px 0px rgba(0, 0, 0, 0.07);
+}
+main .testimonial .swiper-wrapper .swiper-slide img {
+  margin: 0 auto;
+  width: 64px;
+  margin-bottom: 24px;
+}
+main .testimonial .swiper-wrapper .swiper-slide-title {
+  text-align: left;
+  margin-bottom: 24px;
+  color: rgb(75, 85, 99);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  width: 277.33px;
+  height: 120px;
+}
+main .testimonial .swiper-wrapper .swiper-slide #title {
+  height: 168px;
+}
+main .testimonial .swiper-wrapper .swiper-slide .founder {
+  margin-bottom: 4px;
+  color: rgb(17, 24, 39);
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+main .testimonial .swiper-wrapper .swiper-slide .office {
+  margin-bottom: 48px;
+  /* Body3/Normal - All */
+  color: rgb(75, 85, 99);
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+main .testimonial .swiper-wrapper .swiper-slide #foun-off {
+  margin-bottom: 0;
 }
 
 footer {

@@ -4,9 +4,14 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Swiper link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Fav icon link -->
     <link rel="icon" href="./assets/images/favicons.png">
     <!-- main css -->
     <link rel="stylesheet" href="./css/style.min.css" />
+    <!-- Swiper css link -->
+    <link rel="stylesheet" href="./swiper.css">
     <title>Personal Portfolio</title>
 </head>
 
@@ -20,8 +25,9 @@
                 </a>
                 <ul class="nav__list">
                     <li class="nav__list--item"><a href="#about-me" class="nav__list--item-link">About</a></li>
-                    <li class="nav__list--item"><a href="#" class="nav__list--item-link">Work</a></li>
-                    <li class="nav__list--item"><a href="#" class="nav__list--item-link">Testimonials</a></li>
+                    <li class="nav__list--item"><a href="#work" class="nav__list--item-link">Work</a></li>
+                    <li class="nav__list--item"><a href="#testimonials" class="nav__list--item-link">Testimonials</a>
+                    </li>
                     <li class="nav__list--item"><a href="#" class="nav__list--item-link">Contact</a></li>
                     <li class="nav__list--item">
                         <p>|</p>
@@ -214,7 +220,7 @@
             </div>
         </section>
 
-        <section class="work">
+        <section id="work" class="work">
             <div class="container">
                 <p class="info">Work</p>
                 <p class="desc">Some of the noteworthy projects I have built:</p>
@@ -224,10 +230,11 @@
                         <div class="work__wrapper--box-card">
                             <img src="./assets/images/bg-work.jpg" alt="bg-work">
                         </div>
-                        
+
                         <div class="work__wrapper--box-card_title">
                             <h4>NextStore.uz</h4>
-                            <p class="work__wrapper--box-card_title-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus
+                            <p class="work__wrapper--box-card_title-desc">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Maecenas nec urna ac tellus
                                 volutpat viverra. Vestibulum ante
                                 ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
                             <div class="lang">
@@ -243,17 +250,19 @@
                                 <p class="lang-in">Git</p>
                                 <p class="lang-in">GitHub</p>
                             </div>
-                            
-                            <a href="https://next-store-zeta-one.vercel.app/"><img src="./assets/Icons/link-icon.svg" alt="link-icon"></a>
+
+                            <a href="https://next-store-zeta-one.vercel.app/"><img src="./assets/Icons/link-icon.svg"
+                                    alt="link-icon"></a>
                         </div>
 
                     </div>
 
                     <div class="work__wrapper--box">
-                                           
+
                         <div class="work__wrapper--box-card_title">
                             <h4>Upwork.uz</h4>
-                            <p class="work__wrapper--box-card_title-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+                            <p class="work__wrapper--box-card_title-desc">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Maecenas
                                 nec urna ac tellus
                                 volutpat viverra. Vestibulum ante
                                 ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
@@ -270,24 +279,26 @@
                                 <p class="lang-in">Git</p>
                                 <p class="lang-in">GitHub</p>
                             </div>
-                    
-                            <a href="https://upwork-red.vercel.app/"><img src="./assets/Icons/link-icon.svg" alt="link-icon"></a>
+
+                            <a href="https://upwork-red.vercel.app/"><img src="./assets/Icons/link-icon.svg"
+                                    alt="link-icon"></a>
                         </div>
 
                         <div class="work__wrapper--box-card" id="bg-work2">
                             <img src="./assets/images/bg-work2.jpg" alt="bg-work">
                         </div>
-                    
+
                     </div>
 
                     <div class="work__wrapper--box">
                         <div class="work__wrapper--box-card">
                             <img src="./assets/images/bg-work3.jpg" alt="bg-work">
                         </div>
-                    
+
                         <div class="work__wrapper--box-card_title">
                             <h4>Ashyo.uz</h4>
-                            <p class="work__wrapper--box-card_title-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+                            <p class="work__wrapper--box-card_title-desc">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Maecenas
                                 nec urna ac tellus
                                 volutpat viverra. Vestibulum ante
                                 ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
@@ -304,12 +315,111 @@
                                 <p class="lang-in">Git</p>
                                 <p class="lang-in">GitHub</p>
                             </div>
-                    
-                            <a href="https://ashyo-internet-dokon.vercel.app/"><img src="./assets/Icons/link-icon.svg" alt="link-icon"></a>
+
+                            <a href="https://ashyo-internet-dokon.vercel.app/"><img src="./assets/Icons/link-icon.svg"
+                                    alt="link-icon"></a>
                         </div>
-                    
+
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonial">
+            <div class="container">
+                <p class="info">Testimonials</p>
+                <p class="desc">Nice things people have said about me:</p>
+
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./assets/Icons/icon-avatar.svg" alt="avatar">
+                            <p class="swiper-slide-title">“Job well done! I am really impressed. He is very very good at
+                                what he does:) I would
+                                recommend Sagar and will rehire in
+                                the future for Frontend development.”</p>
+                            <p class="founder">Dilshod Buymurodov</p>
+                            <p class="office">Founder - Paymart.uz</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/Icons/icon-avatar2.svg" alt="avatar">
+                            <p class="swiper-slide-title">“Great guy, highly recommended for any COMPLEX front-end
+                                development job! His skills are <br> top-notch and he will be an
+                                amazing addition to any team.”</p>
+                            <p class="founder">Djasur Djumaev</p>
+                            <p class="office">Co-Founder - Uzum.uz</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/Icons/icon-avatar.svg" alt="avatar">
+                            <p id="title" class="swiper-slide-title">Nasiba was extremely easy and pleasant to work with
+                                and
+                                he truly cares about the project being a success.
+                                Nasiba has a high level of knowledge and was able to work on my Full stack
+                                application without any issues.”</p>
+                            <p class="founder">Avaz Aminov</p>
+                            <p id="foun-off" class="office">PM - Solution Lab</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/Icons/icon-avatar.svg" alt="avatar">
+                            <p class="swiper-slide-title">“Job well done! I am really impressed. He is very very good at
+                                what he does:) I would
+                                recommend Sagar and will rehire in
+                                the future for Frontend development.”</p>
+                            <p class="founder">Dilshod Buymurodov</p>
+                            <p class="office">Founder - Paymart.uz</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/Icons/icon-avatar2.svg" alt="avatar">
+                            <p class="swiper-slide-title">“Great guy, highly recommended for any COMPLEX front-end
+                                development job! His skills are <br> top-notch and he will be an
+                                amazing addition to any team.”</p>
+                            <p class="founder">Djasur Djumaev</p>
+                            <p class="office">Co-Founder - Uzum.uz</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/Icons/icon-avatar.svg" alt="avatar">
+                            <p id="title" class="swiper-slide-title">Nasiba was extremely easy and pleasant to work with
+                                and
+                                he truly cares about the project being a success.
+                                Nasiba has a high level of knowledge and was able to work on my Full stack
+                                application without any issues.”</p>
+                            <p class="founder">Avaz Aminov</p>
+                            <p id="foun-off" class="office">PM - Solution Lab</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/Icons/icon-avatar.svg" alt="avatar">
+                            <p class="swiper-slide-title">“Job well done! I am really impressed. He is very very good at
+                                what he does:) I would
+                                recommend Sagar and will rehire in
+                                the future for Frontend development.”</p>
+                            <p class="founder">Dilshod Buymurodov</p>
+                            <p class="office">Founder - Paymart.uz</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/Icons/icon-avatar2.svg" alt="avatar">
+                            <p class="swiper-slide-title">“Great guy, highly recommended for any COMPLEX front-end
+                                development job! His skills are <br> top-notch and he will be an
+                                amazing addition to any team.”</p>
+                            <p class="founder">Djasur Djumaev</p>
+                            <p class="office">Co-Founder - Uzum.uz</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/Icons/icon-avatar.svg" alt="avatar">
+                            <p id="title" class="swiper-slide-title">Nasiba was extremely easy and pleasant to work with
+                                and
+                                he truly cares about the project being a success.
+                                Nasiba has a high level of knowledge and was able to work on my Full stack
+                                application without any issues.”</p>
+                            <p class="founder">Avaz Aminov</p>
+                            <p id="foun-off" class="office">PM - Solution Lab</p>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+
+
             </div>
         </section>
     </main>
@@ -322,5 +432,18 @@
         </div>
     </footer>
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        autoplay: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+</script>
 
 </html>
