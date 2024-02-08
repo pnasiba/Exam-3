@@ -1,13 +1,15 @@
 header {
     width: 100%;
-    background-color: #fff;
-    position: fixed;
-    z-index: 999999;
+    // background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    backdrop-filter: blur(20px);
 
 
     .nav {
         display: flex;
-        height: 68px;
+        height: 72px;
         align-items: center;
         justify-content: space-between;
 
@@ -28,7 +30,6 @@ header {
             align-items: center;
 
             &--item {
-
                 &:nth-child(5) {
                     color: rgb(243, 244, 246);
                 }
@@ -62,8 +63,108 @@ header {
                 }
 
             }
+
+            .bx-menu {
+                display: none;
+            }
         }
 
     }
 
+}
+
+@media only screen and (max-width: 769px) {
+    header {
+        .nav {
+
+            &__list {
+                display: flex;
+                gap: 24px;
+                list-style-type: none;
+                align-items: center;
+
+                &--item {
+
+                    p,
+                    img,
+                    a {
+                        display: none;
+                    }
+
+                }
+
+                .bx-menu {
+                    display: block;
+                    font-size: 30px;
+                    color: $second-color;
+
+                }
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    header {
+        .nav {
+
+            &__list {
+                display: flex;
+                gap: 24px;
+                list-style-type: none;
+                align-items: center;
+
+                &--item {
+
+                    p,
+                    img,
+                    a {
+                        display: none;
+                    }
+
+                }
+
+                .bx-menu {
+                    display: block;
+                    font-size: 30px;
+                    color: $second-color;
+
+                }
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    header {
+        .nav {
+
+            &__list {
+                display: flex;
+                gap: 24px;
+                list-style-type: none;
+                align-items: center;
+
+                &--item {
+
+                    p,
+                    img,
+                    a {
+                        display: none;
+                    }
+
+                }
+
+                .bx-menu {
+                    display: block;
+                    font-size: 30px;
+                    color: $second-color;
+
+                }
+            }
+
+        }
+    }
 }
