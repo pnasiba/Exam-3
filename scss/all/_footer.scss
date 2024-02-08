@@ -17,3 +17,26 @@ footer {
         }
     }
 }
+
+
+@media only screen and (max-width: 576px) {
+    .footer__wrapper {
+        padding: 20px 0 !important;
+
+        p {
+            font-size: 13px !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .footer__wrapper{
+        padding: 24px 0 !important;
+        width: 352px !important;
+        margin-left: -17px !important;
+
+        p{
+            font-size: 12px !important;
+        }
+    }
+}

@@ -17,6 +17,20 @@
     <title>Personal Portfolio</title>
 </head>
 
+<style>
+    body, header, main, footer {
+        /* padding: 25px; */
+        background-color: white;
+        color: black;
+        /* font-size: 25px; */
+    }
+
+    .dark-mode {
+        background-color: black;
+        color: white;
+    }
+</style>
+
 <body>
     <!---------- Header start  --------->
     <header>
@@ -34,10 +48,11 @@
                     <li class="nav__list--item">
                         <p>|</p>
                     </li>
-                    <li class="nav__list--item"><img src="./assets/Icons/light-icon.svg" alt="light-icon"></li>
+                    <li class="nav__list--item"><img src="./assets/Icons/light-icon.svg" alt="light-icon"
+                            onclick="myFunc()"></li>
                     <li class="nav__list--item"><a href="https://docs.google.com/document/u/0/"
                             class="down-btn">Download CV</a></li>
-                            <li class="menu"><i class='bx bx-menu'></i></li>
+                    <li class="menu"><i class='bx bx-menu' id="menu-btn"></i></li>
                 </ul>
             </nav>
         </div>
@@ -444,13 +459,14 @@
                         bin niyyati” ya’ni, “Barcha amallar niyatga bog’liq”.</p>
 
                     <div class="about_me my-email">
-                        <img src="./assets/Icons/email-icon.svg" alt="email-icon">
+                        <a href="https://gmail.com/pnasiba"><img src="./assets/Icons/email-icon.svg"
+                                alt="email-icon"></a>
                         <a href="https://gmail.com/pnasiba">pnasiba@gmail.com</a>
                         <img src="./assets/Icons/copy-icon.svg" alt="copy-icon">
                     </div>
 
                     <div class="about_me my-phone">
-                        <img src="./assets/Icons/call-icon.svg" alt="call-icon">
+                        <a href="tel:+998999999999"><img src="./assets/Icons/call-icon.svg" alt="call-icon"></a>
                         <a href="tel:+998999999999">+998 99 999 99 99</a>
                         <img src="./assets/Icons/copy-icon.svg" alt="copy-icon">
                     </div>
@@ -479,19 +495,28 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            autoplay: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+
+    <script>
+        function myFunc() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+
+    </script>
 </body>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-    var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        autoplay: true,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-    });
-</script>
 
 </html>
